@@ -118,11 +118,11 @@ function processBonus(row, col) {
         }
     }
     else if (board[row][col].bonus == "cross") {
-        for (var i = 0; i < options.height; i++) {
+        for (let i = 0; i < options.height; i++) {
             erase(i, col);
         }
 
-        for (var j = 0; j < options.width; j++) {
+        for (let j = 0; j < options.width; j++) {
             erase(row, j);
         }
     }
